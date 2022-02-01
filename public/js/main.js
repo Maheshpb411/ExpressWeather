@@ -34,7 +34,7 @@ const getInfo = async(event)=>{
         temp_status.innerText = arrdata[0].weather[0].main;
 
         let tempmood = arrdata[0].weather[0].main;
-        let abc = "<i class='fas fa-rain' style='color: #a4b0be;'></i>"
+        let abc = "<i class='fas fa-smoke'></i>";
         console.log(tempmood);
                 if(tempmood == "Clear"){
                     temp_status.innerHTML = 
