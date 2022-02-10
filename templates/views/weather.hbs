@@ -56,14 +56,17 @@
     let current = new Date();
     let days = wk[current.getDay()];
     let dates = current.getDate();
+    let months = current.getMonth();
     
+    console.log(days);
+    console.log(dates);
     
     document.getElementById("day").innerHTML = days;
 
     const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     {{!-- let name = month[d.getMonth()]; --}}
 
-    document.getElementById("date").innerHTML =`${dates}${month[dates]}` ;
+    document.getElementById("date").innerHTML =`${dates}${month[months]}`;
     
 
 </script>
